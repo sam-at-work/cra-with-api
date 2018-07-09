@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "server": "yarn --cwd server start",
+    "client": "yarn --cwd client start",
+    "start": "run-p server client"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.13.7"
+  }
+}

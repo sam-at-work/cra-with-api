@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/node": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "nodemon": "^1.17.5"
+  }
+}
