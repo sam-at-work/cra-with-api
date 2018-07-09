@@ -15,7 +15,7 @@
     "build:client-to-server-static": "yarn --cwd client build && rm -rf server/static && mv client/build/ server/static",
     "build:yarn-lock-to-server-repo": "cp yarn.lock server/",
     "predeploy": "yarn build",
-    "deploy": "yarn --cwd server deploy"
+    "deploy": "yarn --cwd server deploy | ./scripts/update-demo-url.sh"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3",
