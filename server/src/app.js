@@ -7,5 +7,5 @@ app.use(express.static('static'));
 
 app.get("/api", (req, res) => res.json({ message: "Hello from Express API" }));
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}!`);
+  console.log(`Node server listening on port ${PORT}!`);
 });
