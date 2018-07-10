@@ -11,7 +11,7 @@
     "start:dev": "nodemon src/app.js --exec babel-node",
     "build": "babel src/app.js --out-dir dist/",
     "prestart:prod": "yarn build",
-    "start:prod": "node dist/app.js",
+    "start:prod": "NODE_ENV=production node dist/app.js",
     "now-start": "node dist/app.js",
     "deploy": "now -e NODE_ENV=\"production\" --public"
   },
