@@ -12,11 +12,11 @@
     "now-start": "yarn start:prod"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.52",
-    "@babel/core": "^7.0.0-beta.52",
-    "@babel/node": "^7.0.0-beta.52",
-    "@babel/preset-env": "^7.0.0-beta.52",
-    "nodemon": "^1.17.5"
+    "@babel/cli": "^7.0.0-beta.53",
+    "@babel/core": "^7.0.0-beta.53",
+    "@babel/node": "^7.0.0-beta.53",
+    "@babel/preset-env": "^7.0.0-beta.53",
+    "nodemon": "^1.18.1"
   },
   "engines": {
     "node": ">=9 <10"
