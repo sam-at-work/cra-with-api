@@ -8,14 +8,12 @@
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client start",
     "start:dev:server": "yarn --cwd server start:dev",
-    "start:prod": "run-p start:prod:*",
-    "start:prod:server": "yarn --cwd server start:prod",
-    "start:prod:client": "yarn build:client-to-server-static",
+    "start:prod": "yarn --cwd server start:prod",
     "build": "run-p build:*",
-    "build:client-to-server-static": "yarn --cwd client build && rm -rf server/static && mv client/build/ server/static",
-    "build:yarn-lock-to-server-repo": "cp yarn.lock server/",
-    "predeploy": "yarn build",
-    "deploy": "yarn --cwd server deploy | ./scripts/update-demo-url.sh"
+    "build:client": "yarn --cwd client build",
+    "build:server": "yarn --cwd server build",
+    "deploy": "run-s build deploy:now",
+    "deploy:now":  "now server -e NODE_ENV=production --public | ./scripts/update-demo-url.sh"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3",

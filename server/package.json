@@ -2,21 +2,21 @@
   "name": "server",
   "version": "1.0.0",
   "dependencies": {
-    "@babel/cli": "^7.0.0-beta.52",
-    "@babel/core": "^7.0.0-beta.52",
-    "@babel/preset-env": "^7.0.0-beta.52",
     "express": "^4.16.3"
   },
   "scripts": {
     "start:dev": "nodemon src/app.js --exec babel-node",
-    "build": "babel src/app.js --out-dir dist/",
     "prestart:prod": "yarn build",
-    "start:prod": "NODE_ENV=production node dist/app.js",
-    "now-start": "node dist/app.js",
-    "deploy": "now -e NODE_ENV=\"production\" --public"
+    "start:prod": "NODE_ENV=production node build/app.js",
+    "build": "babel src/app.js --out-dir build/ --delete-dir-on-start",
+    "now-build": "# Skip build step",
+    "now-start": "yarn start:prod"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.52",
+    "@babel/core": "^7.0.0-beta.52",
     "@babel/node": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
     "nodemon": "^1.17.5"
   },
   "engines": {

@@ -1,5 +1,2 @@
 .idea/
-
-server/dist/
-server/static/
-server/yarn.lock
+build/
