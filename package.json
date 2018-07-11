@@ -6,15 +6,15 @@
   ],
   "scripts": {
     "start:dev": "run-p start:dev:*",
-    "start:dev:client": "yarn --cwd client start",
-    "start:dev:server": "yarn --cwd server start:dev",
+    "start:dev:client": "yarn --cwd client/ start",
+    "start:dev:server": "yarn --cwd server/ start:dev",
     "start:prod": "run-s build:server start:prod:server",
-    "start:prod:server": "yarn --cwd server start:prod",
+    "start:prod:server": "yarn --cwd server/ start:prod",
     "build": "run-p build:*",
-    "build:client": "yarn --cwd client build",
-    "build:server": "yarn --cwd server build",
+    "build:client": "yarn --cwd client/ build",
+    "build:server": "yarn --cwd server/ build",
     "deploy": "run-s build deploy:now",
-    "deploy:now": "now server -e NODE_ENV=production --public | ./scripts/update-demo-url.sh"
+    "deploy:now": "now deploy server/ -e NODE_ENV=production --public --name=cra-with-api | ./scripts/update-demo-url.sh"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.3",
