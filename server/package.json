@@ -6,7 +6,6 @@
   },
   "scripts": {
     "start:dev": "nodemon src/app.js --exec babel-node",
-    "prestart:prod": "yarn build",
     "start:prod": "NODE_ENV=production node build/app.js",
     "build": "babel src/app.js --out-dir build/ --delete-dir-on-start",
     "now-build": "# Skip build step",
