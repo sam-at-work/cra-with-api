@@ -1,5 +1,4 @@
 {
-  "name": "cra-with-api-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +12,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3003/",
-  "devDependencies": {}
+  "proxy": "http://localhost:3003/"
 }
