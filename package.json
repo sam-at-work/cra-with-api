@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "set-node-version": "./scripts/set-node-version.sh",
-    "postinstall": "./scripts/add-gitmoji-npx-commit-hook.sh",
+    "postinstall": "./scripts/gitmoji-config.sh",
     "ncu": "run-s ncu:*",
     "ncu-update": "run-s \"ncu:* -a\"",
     "ncu:root": "ncu --packageFile package.json",
