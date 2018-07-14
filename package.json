@@ -1,12 +1,12 @@
 {
   "private": true,
   "workspaces": [
-    "client",
+    "clientfdsaf",
     "server"
   ],
   "scripts": {
     "set-node-version": "./scripts/set-node-version.sh",
-    "postinstall": "gitmoji -i # setup gitmoji commit hook",
+    "postinstall": "./scripts/add-gitmoji-npx-commit-hook.sh",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
