@@ -1,12 +1,17 @@
 {
   "private": true,
   "workspaces": [
-    "clientfdsaf",
+    "client",
     "server"
   ],
   "scripts": {
     "set-node-version": "./scripts/set-node-version.sh",
     "postinstall": "./scripts/add-gitmoji-npx-commit-hook.sh",
+    "ncu": "run-s ncu:*",
+    "ncu-update": "run-s \"ncu:* -a\"",
+    "ncu:root": "ncu",
+    "ncu:client": "cd client; npx ncu",
+    "ncu:server": "cd server; npx ncu",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
@@ -20,6 +25,7 @@
   },
   "devDependencies": {
     "gitmoji-cli": "^1.9.0",
+    "npm-check-updates": "^2.14.2",
     "npm-run-all": "^4.1.3",
     "prettier": "^1.13.7"
   },
