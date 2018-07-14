@@ -5,6 +5,7 @@
     "server"
   ],
   "scripts": {
+    "set-node-version": "./scripts/set-node-version.sh",
     "postinstall": "gitmoji -i # setup gitmoji commit hook",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
