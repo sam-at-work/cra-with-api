@@ -11,7 +11,7 @@ class App extends Component {
     setTimeout(async () => {
       const data = await fetch("/api").then(res => res.json());
       this.setState(data);
-    }, 3000);
+    }, 1000);
   }
 
   render() {
