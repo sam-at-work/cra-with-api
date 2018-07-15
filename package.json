@@ -6,7 +6,7 @@
     "server"
   ],
   "scripts": {
-    "set-node-version": "./scripts/set-node-version.sh",
+    "set-node-version": "./scripts/node-set-version.sh",
     "postinstall": "./scripts/gitmoji-config.sh",
     "ncu": "run-s ncu:*",
     "ncu-update": "run-s \"ncu:* -a\"",
