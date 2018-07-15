@@ -1,4 +1,5 @@
 {
+  "name": "cra-with-api",
   "private": true,
   "workspaces": [
     "client",
@@ -10,8 +11,8 @@
     "ncu": "run-s ncu:*",
     "ncu-update": "run-s \"ncu:* -a\"",
     "ncu:root": "ncu --packageFile package.json",
-    "ncu:client": "cd client; npx ncu --packageFile package.json",
-    "ncu:server": "cd server; npx ncu --packageFile package.json",
+    "ncu:client": "cd client && npx ncu --packageFile package.json",
+    "ncu:server": "cd server && npx ncu --packageFile package.json",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
@@ -21,7 +22,7 @@
     "build:client": "yarn --cwd client/ build",
     "build:server": "yarn --cwd server/ build",
     "deploy": "run-s build deploy:now",
-    "deploy:now": "now deploy server/ -e NODE_ENV=production --public --name=cra-with-api | ./scripts/update-demo-url.sh"
+    "deploy:now": "./scripts/deploy-now.sh"
   },
   "devDependencies": {
     "gitmoji-cli": "^1.9.0",
