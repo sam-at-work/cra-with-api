@@ -6,14 +6,14 @@
     "server"
   ],
   "scripts": {
-    "node-set-project-version": "./scripts/node-set-project-version.sh",
-    "node-check-latest": "./scripts/node-check-latest.sh",
     "postinstall": "./scripts/gitmoji-config.sh",
+    "node:set-project-version": "./scripts/node-set-project-version.sh",
+    "node:check-latest": "./scripts/node-check-latest.sh",
     "ncu": "run-s ncu:*",
-    "ncu-update": "run-s \"ncu:* -a\"",
     "ncu:root": "ncu --packageFile package.json",
     "ncu:client": "cd client && npx ncu --packageFile package.json",
     "ncu:server": "cd server && npx ncu --packageFile package.json",
+    "ncu:update:all": "run-s \"ncu:* -a\"",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
