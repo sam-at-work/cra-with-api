@@ -22,7 +22,7 @@
     "build:client": "yarn --cwd client/ build",
     "build:server": "yarn --cwd server/ build",
     "deploy": "run-s build deploy:now",
-    "deploy:now": "./scripts/deploy-now.sh"
+    "deploy:now": "./scripts/now-deploy.sh"
   },
   "devDependencies": {
     "gitmoji-cli": "^1.9.0",
