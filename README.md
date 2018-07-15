@@ -2,4 +2,4 @@
 
 Demonstrate a Create React App project that comes with its own Node Server.
 
-[Live Demo](https://cra-with-api-qyluwznysu.now.sh)
+[Live Demo](https://cra-with-api-aehkwjfuwc.now.sh)
