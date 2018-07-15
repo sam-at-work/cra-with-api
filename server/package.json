@@ -6,7 +6,7 @@
     "express": "^4.16.3"
   },
   "scripts": {
-    "start:dev": "nodemon src/app.mjs --exec babel-node",
+    "start:dev": "nodemon src/app --exec babel-node",
     "start:prod": "NODE_ENV=production node build/app.js",
     "build": "babel src/ --out-dir build/ --delete-dir-on-start",
     "now-build": "# Skip build step",
