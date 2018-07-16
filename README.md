@@ -2,9 +2,10 @@
 
 A Create React App project that comes with its own Node Server and a bunch of useful scripts
 
-See a [Live Demo](https://cra-with-api-epqeqjrxby.now.sh)
+See a [Live Demo](https://cra-with-api-kyoeorcftd.now.sh)
 
 ## Key Features
+
 - `./` (Project Root)
   - Yarn Workspaces used to hoist all workspace dependencies
   - NPM scripts for:
@@ -19,17 +20,19 @@ See a [Live Demo](https://cra-with-api-epqeqjrxby.now.sh)
     - running the production build
     - deploying production build using ∆Now
   - The following NPM packages that apply to both Client and Server workspaces:
+
     - [Prettier](https://prettier.io/) - apply consistent stying across client and server
     - [Gitmoji](https://gitmoji.carloscuesta.me/) - pretty git messages
-    
 - `./client`
+
   - Create React App
   - Dependencies manager by Yarn workspace
-  
+
 - `./server`
+
   - Run in development mode with Nodemon and Babel 7
   - Production build compiled with Babel 7
-  
+
 - `./scripts`
   - Bash scripts for:
     - Killing the dev server process by port (for those times it doesn't terminate properly)
@@ -38,4 +41,5 @@ See a [Live Demo](https://cra-with-api-epqeqjrxby.now.sh)
     - Removing all but the latest Now∆ deployment
 
 ## Medium articles about this project
+
 - [Create React App / Express API / Yarn Workspaces / Babel 7 / Now Deployment](https://medium.com/@smrgrace/create-react-app-express-api-yarn-workspaces-babel-7-now-deployment-2097bf8b371)
