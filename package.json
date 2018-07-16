@@ -11,10 +11,10 @@
     "project:use-current-node-version": "./scripts/project-use-current-node-version.sh",
     "project:set-name": "node --experimental-modules scripts/project-set-name",
     "ncu": "run-s ncu:*",
+    "ncu-a": "run-s \"ncu:* -a\"",
     "ncu:root": "ncu --packageFile package.json",
     "ncu:client": "cd client && npx ncu --packageFile package.json",
     "ncu:server": "cd server && npx ncu --packageFile package.json",
-    "ncu:update:all": "run-s \"ncu:* -a\"",
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
@@ -24,7 +24,10 @@
     "build:client": "yarn --cwd client/ build",
     "build:server": "yarn --cwd server/ build",
     "deploy": "run-s build deploy:now",
-    "deploy:now": "./scripts/now-deploy.sh"
+    "deploy:now": "./scripts/now-deploy.sh",
+    "du": "run-s du:*",
+    "du:client/build": "du -ah client/build | sort -k2",
+    "du:node_modules": "du -hs ./node_modules"
   },
   "devDependencies": {
     "check-node-version": "^3.2.0",
