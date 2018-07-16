@@ -1,5 +1,5 @@
 {
-  "name": "cra-with-api",
+  "name": "CRA-with-API",
   "private": true,
   "workspaces": [
     "client",
@@ -7,8 +7,9 @@
   ],
   "scripts": {
     "postinstall": "./scripts/gitmoji-config.sh",
-    "node:set-project-version": "./scripts/node-set-project-version.sh",
     "node:check-latest": "./scripts/node-check-latest.sh",
+    "project:use-current-node-version": "./scripts/project-use-current-node-version.sh",
+    "project:set-name": "node --experimental-modules scripts/project-set-name",
     "ncu": "run-s ncu:*",
     "ncu:root": "ncu --packageFile package.json",
     "ncu:client": "cd client && npx ncu --packageFile package.json",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "check-node-version": "^3.2.0",
+    "edit-json-file": "^1.1.0",
     "gitmoji-cli": "^1.9.0",
     "npm-check-updates": "^2.14.2",
     "npm-run-all": "^4.1.3",
