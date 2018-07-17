@@ -7,8 +7,8 @@
   },
   "scripts": {
     "start:dev": "nodemon src/app --exec babel-node",
-    "start:prod": "NODE_ENV=production node build/app.js",
-    "build": "babel src/ --out-dir build/ --delete-dir-on-start",
+    "start:prod": "NODE_ENV=production node --experimental-modules build/app",
+    "build": "babel src/ --out-dir build/ --delete-dir-on-start --keep-file-extension",
     "now-build": "# Skip build step",
     "now-start": "yarn start:prod"
   },
