@@ -2,7 +2,7 @@
 
 A Create React App project that comes with its own Node Server and a bunch of useful scripts
 
-See a [Live Demo](https://cra-with-api-fmvympfkax.now.sh)
+See a [Live Demo](https://cra-with-api-ddrjrpkxzl.now.sh)
 
 ## Key Features
 
