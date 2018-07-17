@@ -2,7 +2,7 @@
 
 A Create React App project that comes with its own Node Server and a bunch of useful scripts
 
-See a [Live Demo](https://cra-with-api-kyoeorcftd.now.sh)
+See a [Live Demo](https://cra-with-api-fmvympfkax.now.sh)
 
 ## Key Features
 
@@ -32,6 +32,7 @@ See a [Live Demo](https://cra-with-api-kyoeorcftd.now.sh)
 
   - Run in development mode with Nodemon and Babel 7
   - Production build compiled with Babel 7
+  - core-js is a dependency to enable the polyfills added by babel to be installed in production
 
 - `./scripts`
   - Bash scripts for:

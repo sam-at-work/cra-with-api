@@ -11,7 +11,7 @@
       "useBuiltIns": "usage",
       "modules": false,
       "debug": true,
-      "include": ["es6.array.iterator"] // <- This is a hack
+      "include": ["es6.array.iterator"] // <- This is a hack.
     }]
   ]
 }
