@@ -1,4 +1,8 @@
-{
+/**
+ * When we use [].values(), a Babel bug means it doesn't add the
+ * required polyfill when "useBuiltIns" is "usage".
+ * The include of "es6.array.iterator" below, is a manual work around until the bug is fixed.
+ */{
   "presets": [
     ["@babel/preset-env", {
       "targets": {
@@ -6,7 +10,8 @@
       },
       "useBuiltIns": "usage",
       "modules": false,
-      "debug": true
+      "debug": true,
+      "include": ["es6.array.iterator"] // <- This is a hack
     }]
   ]
 }

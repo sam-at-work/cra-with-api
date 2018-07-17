@@ -1,9 +1,3 @@
-/**
- * When we use [].values(), a babel bug means it doesn't add the
- * required polyfill, even with "useBuiltIns": "usage" set in .babelrc.
- * The import below is a manual work around until the bug is fixed.
- */
-import "core-js/modules/es6.array.iterator";
 import express from "express";
 
 const isProd = process.env.NODE_ENV === "production";
