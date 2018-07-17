@@ -7,8 +7,10 @@ See a [Live Demo](https://cra-with-api-fmvympfkax.now.sh)
 ## Key Features
 
 - `./` (Project Root)
+
   - Yarn Workspaces used to hoist all workspace dependencies
-  - NPM scripts for:
+
+    - NPM scripts for:
     - setting the name of the project (in `package.json` and `client/public/maniject.json`)
     - checking the current node version is latest Node version
     - setting the current Node version as the Node version for the project
@@ -19,10 +21,11 @@ See a [Live Demo](https://cra-with-api-fmvympfkax.now.sh)
     - generating a production build
     - running the production build
     - deploying production build using ∆Now
-  - The following NPM packages that apply to both Client and Server workspaces:
 
+  - The following NPM packages that apply to both Client and Server workspaces:
     - [Prettier](https://prettier.io/) - apply consistent stying across client and server
     - [Gitmoji](https://gitmoji.carloscuesta.me/) - pretty git messages
+
 - `./client`
 
   - Create React App
@@ -35,6 +38,7 @@ See a [Live Demo](https://cra-with-api-fmvympfkax.now.sh)
   - core-js is a dependency to enable the polyfills added by babel to be installed in production
 
 - `./scripts`
+
   - Bash scripts for:
     - Killing the dev server process by port (for those times it doesn't terminate properly)
     - Prefixing `npx` to the gitmoji `prepare-commit-msg` hook, so gitmoji can be installed locally
