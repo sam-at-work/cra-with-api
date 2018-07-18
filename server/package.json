@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "core-js": "^2.5.7",
     "express": "^4.16.3"
   },
   "scripts": {
     "start:dev": "nodemon src/app --exec babel-node",
-    "start:prod": "NODE_ENV=production node build/app.mjs",
+    "start:prod": "NODE_ENV=production node --harmony_array_prototype_values build/app.mjs",
     "build": "babel src/ --out-dir build/ --delete-dir-on-start --keep-file-extension",
     "now-build": "# Skip build step",
     "now-start": "yarn start:prod"

@@ -1,8 +1,4 @@
 /**
- * When we use [].values(), a Babel bug means it doesn't add the
- * required polyfill when "useBuiltIns" is "usage".
- * The include of "es6.array.iterator" below, is a manual work around until the bug is fixed.
- *
  * A bug in babel-node stops --experimental-modules being passed as an argument to nodemon.
  * https://github.com/babel/babel/issues/8148
  */
@@ -12,10 +8,9 @@
       "targets": {
         "node": "current"
       },
-      "useBuiltIns": "usage", // <- should be automatically adding "es6.array.iterator" but isn't
+      "useBuiltIns": "usage", // <- Another babel bug - should be automatically adding "es6.array.iterator" but isn't
       // "modules": false, <- can uncomment this once babel-node supports --experimental-modules (https://github.com/babel/babel/issues/8148)
-      "debug": true,
-      "include": ["es6.array.iterator"] // <- This is a hack.
+      "debug": true
     }]
   ]
 }
