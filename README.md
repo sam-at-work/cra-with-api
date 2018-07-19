@@ -44,6 +44,7 @@ See a [Live Demo](https://cra-with-api-ddrjrpkxzl.now.sh)
     - Prefixing `npx` to the gitmoji `prepare-commit-msg` hook, so gitmoji can be installed locally
     - Listing all the Now∆ deployments of the project
     - Removing all but the latest Now∆ deployment
+    - Git Merging `master` into all other branches 
 
 ## Medium articles about this project
 
