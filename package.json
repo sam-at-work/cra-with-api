@@ -9,7 +9,7 @@
     "postinstall": "./scripts/gitmoji-config.sh",
     "git:merge-master": "./scripts/git-merge-master-into-all-branches.sh",
     "node:check-latest": "./scripts/node-check-latest.sh",
-    "project:use-current-node-version": "./scripts/project-use-current-node-version.sh",
+    "project:set-node-ver": "./scripts/project-set-node-ver.sh",
     "project:set-name": "node --experimental-modules scripts/project-set-name",
     "ncu": "run-s ncu:*",
     "ncu-a": "run-s \"ncu:* -a\"",
