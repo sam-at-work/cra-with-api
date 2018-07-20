@@ -19,6 +19,8 @@
     "start:dev": "run-p start:dev:*",
     "start:dev:client": "yarn --cwd client/ start",
     "start:dev:server": "yarn --cwd server/ start:dev",
+    "start-https:dev": "run-p start-https:dev:* start:dev:server",
+    "start-https:dev:client": "yarn --cwd client/ start-https",
     "start:prod": "run-s build:server start:prod:server",
     "start:prod:server": "yarn --cwd server/ start:prod",
     "build": "run-p build:*",
