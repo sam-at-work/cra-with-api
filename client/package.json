@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start-https": "HTTPS=true react-scripts start",
-    "build": "react-scripts build ../server/dist",
+    "build": "react-scripts build",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
