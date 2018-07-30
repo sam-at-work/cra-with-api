@@ -25,7 +25,7 @@ class App extends Component {
         <p>Features:</p>
         <ul>
           <li>
-            Server and client monorepo with
+            Server and client mono-repo with
             <a href="https://yarnpkg.com/lang/en/docs/workspaces/">
               Yarn Workspaces.
             </a>
