@@ -11,7 +11,7 @@ See a [Live Demo](https://cra-with-api-fidlzcxwwg.now.sh)
   - Yarn Workspaces used to hoist all workspace dependencies
 
     - NPM scripts for:
-    - setting the name of the project (in `package.json` and `client/public/maniject.json`)
+    - setting the name of the project (in `package.json` and `client/public/manifest.json`)
     - checking the current node version is latest Node version
     - setting the current Node version as the Node version for the project
     - checking if dependencies are up to date

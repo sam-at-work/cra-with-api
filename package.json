@@ -1,5 +1,5 @@
 {
-  "name": "CRA-with-API",
+  "name": "cra-with-api",
   "private": true,
   "workspaces": [
     "client",
