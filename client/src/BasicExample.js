@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import App from "./App";
+
 const BasicExample = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <ul>
         <li>
@@ -14,6 +16,9 @@ const BasicExample = () => (
         <li>
           <Link to="/topics">Topics</Link>
         </li>
+        <li>
+          <Link to="/cra">Create React App</Link>
+        </li>
       </ul>
 
       <hr />
@@ -21,6 +26,7 @@ const BasicExample = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
+      <Route path="/cra" component={App} />
     </div>
   </Router>
 );
