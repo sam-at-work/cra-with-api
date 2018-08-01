@@ -6,6 +6,7 @@ import App from "./App";
 const BasicExample = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <div>
+      <p><code>process.env.PUBLIC_URL</code> is <code>{process.env.PUBLIC_URL}</code></p>
       <ul>
         <li>
           <Link to="/">Home</Link>
