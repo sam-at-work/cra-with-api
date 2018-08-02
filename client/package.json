@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +11,8 @@
     "start": "react-scripts start",
     "start-https": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "yarn build",
+    "build-gh-pages": "PUBLIC_URL=/`node -p \"require('../package.json').name\"` react-scripts build",
+    "predeploy": "yarn build-gh-pages",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
