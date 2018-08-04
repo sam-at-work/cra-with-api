@@ -2,7 +2,9 @@
 
 A Create React App project that comes with its own Node Server and a bunch of useful scripts
 
-See a [Live Demo](https://cra-with-api-fidlzcxwwg.now.sh)
+See live demos of branches:
+- [master](https://cra-with-api-aehkwjfuwc.now.sh)
+- [react-router](https://cra-with-api-lzhnvfcnvl.now.sh)
 
 ## Key Features
 
@@ -48,4 +50,4 @@ See a [Live Demo](https://cra-with-api-fidlzcxwwg.now.sh)
 
 ## Medium articles about this project
 
-- [Create React App / Express API / Yarn Workspaces / Babel 7 / Now Deployment](https://medium.com/@smrgrace/create-react-app-express-api-yarn-workspaces-babel-7-now-deployment-2097bf8b371)
+- (https://cra-with-api-lzhnvfcnvl.now.sh)
