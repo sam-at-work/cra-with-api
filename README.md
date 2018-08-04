@@ -25,8 +25,8 @@ See live demos of branches:
     - deploying production build using ∆Now
 
   - The following NPM packages that apply to both Client and Server workspaces:
-    - (https://cra-with-api-lzhnvfcnvl.now.sh) - apply consistent stying across client and server
-    - (https://cra-with-api-lzhnvfcnvl.now.sh) - pretty git messages
+    - [Prettier](https://prettier.io/) - apply consistent stying across client and server
+    - [Gitmoji](https://gitmoji.carloscuesta.me/) - pretty git messages
 
 - `./client`
 
