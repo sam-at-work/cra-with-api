@@ -13,10 +13,10 @@
     "now-start": "yarn start:prod"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.56",
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/node": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
     "nodemon": "^1.18.3"
   },
   "engines": {
