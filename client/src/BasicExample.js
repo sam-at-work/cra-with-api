@@ -1,12 +1,32 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 import App from "./App";
 
+let Router;
+if (process.env.REACT_APP_GH_PAGES) {
+  Router = require("react-router-dom").HashRouter;
+} else {
+  Router = require("react-router-dom").BrowserRouter;
+}
+
 const BasicExample = () => (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <div>
-      <p><code>process.env.PUBLIC_URL</code> is <code>{process.env.PUBLIC_URL}</code></p>
+      <p>
+        <code>process.env.PUBLIC_URL</code> is{" "}
+        <code>{process.env.PUBLIC_URL}</code>
+      </p>
+      <p>
+        <code>process.env.REACT_APP_GH_PAGES</code> is{" "}
+        <code>{process.env.REACT_APP_GH_PAGES}</code>
+      </p>
+      <p>
+        <code>Router</code> is{" "}
+        <code>
+          {process.env.REACT_APP_GH_PAGES ? "HashRouter" : "BrowserRouter"}
+        </code>
+      </p>
       <ul>
         <li>
           <Link to="/">Home</Link>

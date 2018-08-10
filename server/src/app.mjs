@@ -7,14 +7,14 @@ const buildDir = path.join(__dirname, '..', "client-production-build");
 
 const app = express();
 
+app.get("/api", (req, res) => res.json({ message: "Hello from Express" }));
+
 if (isProd) {
   app.use(express.static(buildDir));
   app.get('/*', function (req, res) {
     res.sendFile(path.join(buildDir, 'index.html'));
   });
 }
-
-app.get("/api", (req, res) => res.json({ message: "Hello from Express" }));
 
 app.listen(PORT, () => {
   for (const m of [
