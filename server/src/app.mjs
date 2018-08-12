@@ -1,9 +1,9 @@
-import path from "path";
 import express from "express";
 
 const isProd = process.env.NODE_ENV === "production";
 const PORT = isProd ? 4004 : 3003;
-const buildDir = path.join(__dirname, '..', "client-production-build");
+const clientBuildURL = new URL("../client-production-build", import.meta.url);
+const buildDir = clientBuildURL.pathname;
 
 const app = express();
 
