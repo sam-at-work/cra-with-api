@@ -8,9 +8,10 @@
       "targets": {
         "node": "current"
       },
-      "useBuiltIns": "usage", // <- Another babel bug - should be automatically adding "es6.array.iterator" but isn't
-      // "modules": false, <- can uncomment this once babel-node supports --experimental-modules (https://github.com/babel/babel/issues/8148)
+      "useBuiltIns": "usage", // <- Babel bug - should be automatically adding "es6.array.iterator" but isn't
+      "modules": false,
       "debug": true
     }]
-  ]
+  ],
+  "plugins": ["@babel/syntax-import-meta"]
 }
