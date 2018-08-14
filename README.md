@@ -48,7 +48,16 @@ See live demos of branches:
     - Listing all the Now∆ deployments of the project
     - Removing all but the latest Now∆ deployment
     - Git Merging `master` into all other branches 
+    
+## Debugging in WebStorm
+- Client code
+    - [Debugging React apps created with Create React App in WebStorm](https://blog.jetbrains.com/webstorm/2017/01/debugging-react-apps/)
+    - TL;DR Create a new JavaScript Debug Run/Debug Configuration on the same URL the React App runs on
+    
+- Server code
+    - [Debugging Node.js apps in WebStorm](https://blog.jetbrains.com/webstorm/2017/09/debugging-node-js-apps-in-webstorm/)
+    - TL;DR Create a new Node.js Run/Debug Configuration 
 
 ## Medium articles about this project
 
-- (https://cra-with-api-lzhnvfcnvl.now.sh)
+- [Create React App / Express API / Yarn Workspaces / Babel 7 / Now Deployment](https://medium.com/@smrgrace/create-react-app-express-api-yarn-workspaces-babel-7-now-deployment-2097bf8b371)
