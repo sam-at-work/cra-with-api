@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { ReactComponent as Logo } from './logo.svg'
+import styles from "./App.module.css";
 
 class App extends Component {
   state = {
@@ -16,16 +16,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title"> § Welcome to CRA with API demo §</h1>
+      <div className={styles["App"]}>
+        <header className={styles["App-header"]}>
+          <Logo className={styles["App-logo"]} alt="logo" />
+          <h1 className={styles["App-title"]}>
+            § Welcome to CRA with API demo §
+          </h1>
         </header>
-        <p className="App-intro">{this.state.message}</p>
+        <p className={styles["App-intro"]}>{this.state.message}</p>
         <p>Features:</p>
         <ul>
           <li>
-            Server and client mono-repo with
+            Server and client mono-repo with{" "}
             <a href="https://yarnpkg.com/lang/en/docs/workspaces/">
               Yarn Workspaces.
             </a>

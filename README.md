@@ -3,7 +3,7 @@
 A Create React App project that comes with its own Node Server and a bunch of useful scripts
 
 See live demos of branches:
-- [master](https://cra-with-api-aehkwjfuwc.now.sh)
+- [master](https://cra-with-api-szjxrojbax.now.sh)
 - [react-router](https://cra-with-api-zvunbytmru.now.sh)
 
 ## Key Features
@@ -30,7 +30,8 @@ See live demos of branches:
 
 - `./client`
 
-  - Create React App
+  - Create React App 2
+    - [Roadmap for react-scripts@2.0](https://github.com/facebook/create-react-app/issues/3815)  
   - Dependencies manager by Yarn workspace
 
 - `./server`
