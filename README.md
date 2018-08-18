@@ -60,3 +60,4 @@ See live demos of branches:
 ## Medium articles about this project
 
 - [Create React App / Express API / Yarn Workspaces / Babel 7 / Now Deployment](https://medium.com/@smrgrace/create-react-app-express-api-yarn-workspaces-babel-7-now-deployment-2097bf8b371)
+= [Having a git repo that is a template for new projects](https://medium.com/@smrgrace/having-a-git-repo-that-is-a-template-for-new-projects-148079b7f178)
