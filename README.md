@@ -1,6 +1,6 @@
 # CRA with API
 
-A Create React App project that comes with its own Node Server and a bunch of useful scripts
+A Create React App project that comes with its own Node Server and a bunch of useful scripts.
 
 See live demos of branches:
 - [master](https://cra-with-api-aehkwjfuwc.now.sh)
@@ -46,16 +46,16 @@ See live demos of branches:
     - Prefixing `npx` to the gitmoji `prepare-commit-msg` hook, so gitmoji can be installed locally
     - Listing all the Now∆ deployments of the project
     - Removing all but the latest Now∆ deployment
-    - Git Merging `master` into all other branches 
-    
+    - Git Merging `master` into all other branches
+
 ## Debugging in WebStorm
 - Client code
     - [Debugging React apps created with Create React App in WebStorm](https://blog.jetbrains.com/webstorm/2017/01/debugging-react-apps/)
     - TL;DR Create a new JavaScript Debug Run/Debug Configuration on the same URL the React App runs on
-    
+
 - Server code
     - [Debugging Node.js apps in WebStorm](https://blog.jetbrains.com/webstorm/2017/09/debugging-node-js-apps-in-webstorm/)
-    - TL;DR Create a new Node.js Run/Debug Configuration 
+    - TL;DR Create a new Node.js Run/Debug Configuration
 
 ## Medium articles about this project
 
