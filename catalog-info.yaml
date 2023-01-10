@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cra-with-api
+  annotations:
+    github.com/project-slug: sam-at-work/cra-with-api
+spec:
+  type: other
+  lifecycle: unknown
+  owner: sam
